@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="bluethinkinc" translate="label" sortOrder="120">
+            <label>Bluethinkinc</label>
+        </tab>
+        <section id="popup_survey" translate="label" type="text"
+        sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Popup Survey</label>
+            <tab>bluethinkinc</tab>
+            <resource>Bluethinkinc_PopupSurvey::Configration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10"
+            showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <attribute type="expanded">1</attribute>
+                <field id="enable" translate="label" type="select"
+                sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="survey_product_sku" translate="label"
+                sortOrder="20" type="multiselect" showInDefault="1"
+                showInWebsite="1" showInStore="1">
+                    <label>Select Product Sku For Survey</label>
+                    <source_model>Bluethinkinc\PopupSurvey\Model\Config\Source\SurveyProductSku</source_model>
+                </field>
+                <field id="survey_url" translate="label"
+                sortOrder="20" type="text" showInDefault="1"
+                showInWebsite="1" showInStore="1">
+                    <label>Survey Url</label>
+                </field>
+                <field id="survey_text" translate="label" sortOrder="20"
+                type="text" showInDefault="1" showInWebsite="1"
+                showInStore="1">
+                    <label>Survey Heading</label>
+                </field>
+                <field id="survey_paragraph" translate="label" sortOrder="20"
+                type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Survey Text</label>
+                </field>
+                <field id="survey_date_to" type="date" translate="label" sortOrder="20"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Survey Date To</label>
+                    <frontend_model>Bluethinkinc\PopupSurvey\Block\Adminhtml\System\Config\Date</frontend_model>
+                </field>
+                <field id="survey_date_from" type="date" translate="label" sortOrder="20"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Survey Date From</label>
+                    <frontend_model>Bluethinkinc\PopupSurvey\Block\Adminhtml\System\Config\Date</frontend_model>
+                </field>
+            </group>
+        </section>
+     </system>
+</config>

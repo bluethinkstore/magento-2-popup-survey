@@ -1,0 +1,57 @@
+#survey-modal-content{
+    display: none;
+}
+
+.style-modal {
+    width: 765px;
+    margin: auto;
+}
+
+.style-modal hr {
+    color: black;
+}
+
+.style-modal .modal-inner-wrap {
+    background: #fff !important;
+}
+
+.style-modal .modal-footer {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.style-modal .modal-footer button {
+    display: inline;
+    width: 100%;
+    border: none;
+    margin: 2px auto;
+}
+
+.style-modal .modal-footer button:first-child {
+    background-color: #999999;
+    color: black;
+}
+
+.style-modal .modal-footer button:nth-child(2) {
+    background-color: #cecece;
+    color: black;
+}
+
+.style-modal .action-close:before {
+    color: white !important;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+    background: gray;
+}
+
+.style-modal .modal-content {
+    color: black;
+    text-align: center;
+}
+
+.style-modal .modal-content h2 {
+    text-align: center;
+    font-weight: 600;
+}

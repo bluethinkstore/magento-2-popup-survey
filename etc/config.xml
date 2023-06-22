@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <popup_survey>
+            <general>
+                <enable>1</enable>
+                <survey_url>Please enter survey url...</survey_url>
+                <survey_text>Please enter survey question</survey_text>
+                <survey_paragraph>Please enter survey text</survey_paragraph>
+            </general>
+        </popup_survey>
+    </default>
+</config>

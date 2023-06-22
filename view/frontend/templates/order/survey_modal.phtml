@@ -1,0 +1,20 @@
+<?php $viewModel = $block->getData('viewModel');?>
+<?php if ($viewModel->isDateAvailable() && $viewModel->isProductPurchased()):?>
+    <div
+        data-mage-init='{
+            "popup-survey": {
+                "target": "#survey-modal-content",
+                "redirectUrl": "<?= /* @noEscape */ $viewModel->getSurveyUrl(); ?>"}}'>
+        <div id="survey-modal-content">
+            <h2><?= $block->escapeHtmlAttr($viewModel->getSurveyText()) ?></h2>
+            <img 
+                src="<?= $block->escapeHtmlAttr($viewModel->getImage())?>"
+                alt="Image not found"
+                height="300px"
+                width="200px"/>
+            <p>
+                <?=$block->escapeHtmlAttr($viewModel->getSurveyParagraph()) ?>
+            </p>
+        </div>
+    </div>
+<?php endif;?>

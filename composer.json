@@ -1,0 +1,21 @@
+{
+    "name": "bluethinkinc/magento-2-popup-survey",
+    "description": "Import Wishlist",
+    "type": "magento2-module",
+    "minimum-stability": "dev",
+    "version": "1.0.2",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Bluethinkinc"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bluethinkinc\\PopupSurvey\\": ""
+        }
+    }
+}
